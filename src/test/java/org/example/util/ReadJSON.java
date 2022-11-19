@@ -1,17 +1,23 @@
 package org.example.util;
-
+/*
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+*/
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.skyscreamer.jsonassert.JSONParser;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.Iterator;
 import java.util.Map;
 
 public class ReadJSON {
-    public static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws IOException, ParseException, JSONException {
         Object obj = new JSONParser().parse(new FileReader("address.json"));
         JSONObject jo = (JSONObject) obj;
 
