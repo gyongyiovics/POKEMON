@@ -18,6 +18,7 @@ import java.util.Map;
 
 public class ReadJSON {
     public static void main(String[] args) throws IOException, ParseException, JSONException {
+        /*
         Object obj = new JSONParser().parse(new FileReader("address.json"));
         JSONObject jo = (JSONObject) obj;
 
@@ -41,7 +42,7 @@ public class ReadJSON {
             //can I put these getKey and getValue values to a map?
             //HashMap<String, String>
         }
-
+*/
 
         /**
          * here: postalCode
@@ -51,7 +52,7 @@ public class ReadJSON {
          */
         System.out.println("***************************");
 
-
+/*
         JSONArray ja = (JSONArray) jo.get("phoneNumbers");
         Iterator itr2 = ja.iterator();
 
@@ -63,6 +64,8 @@ public class ReadJSON {
                 System.out.println(pair.getKey() + " : " + pair.getValue());
             }
         }
+
+ */
     }
 
     //https://www.delftstack.com/howto/java/read-json-file-java/ -- reads it correcty, but then comes the nullpointerexception
